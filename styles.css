@@ -1,9 +1,155 @@
 body {
     background-color: rgb(86,170,170);
+    font-family: 'Courier New', monospace;
+    
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;;
 }
 
 .toolsBar {
-    width: 100%;
+    width: 150px;
     height: 5vh;
-    background-color: rgb(129, 129, 129);
+    background-color: rgb(195, 195, 195);
+
+}
+
+.portifolioContainer {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;  
+    padding: 1rem;
+
+}
+
+.profileContainer {
+    width: 280px;
+    height: 80vh;
+    background-color: rgb(195, 195, 195);
+
+
+}
+
+.homeButton {
+    width: 10%;
+    color: rgb(0, 0, 0);
+  
+}
+
+.headerBarProfile {
+    width: 100%;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    box-sizing: border-box;
+    border: 2px solid  rgb(195, 195, 195);   
+    background: rgb(10,46,92);
+    background: linear-gradient(90deg, rgba(10,46,92,1) 0%, rgba(9,9,121,1) 63%, rgba(103,208,229,1) 100%);
+
+}
+
+.headerBarProfile > p {
+    font-size: 0.8rem;
+    margin: 0.5rem;
+}
+
+.headerBarProfile > button {
+    background-color: rgb(129, 129, 129);  
+    font-size: 0.5rem;
+    margin: 0.5rem;
+    font-weight: bold;
+
+}
+
+.headerBarProfile > button:hover {
+    cursor: not-allowed;
+}
+
+.profilePic {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.profileLocation {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.profilePic > img { 
+    border: 1px solid rgb(150, 145, 145);;
+}
+
+.profileInfos {
+    display: flex; 
+    width: 100%;
+    height: 30px;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+}
+
+.profileInfos > p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.profileSkillsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.profileSkillsContainer > p {
+    margin-top: 30px;
+    margin-left: 10px;
+    font-weight: bold;
+
+}
+.profileSkills {
+    width: 100%;
+    height: 50px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+.profileExperiences {
+    width: 250px;
+    height: 140px;
+    margin: 20px;
+    background: rgb(255, 255, 255);
+    overflow-y: scroll; 
+}
+
+.profileExperiences > div > h2 {
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 5px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
 }
